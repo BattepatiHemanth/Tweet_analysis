@@ -110,16 +110,6 @@ def get_sent(tweets_info):
     except:
       continue
   return score
-
-
 print()
 
-
-# sentimentDF = tweets_info.rdd.map(lambda x: (x,get_sent(x))).toDF()
-# sentimentDF.show() 
-
-
-# sentimentOfTweetdf= sentimentOfTweet.toDF().withColumnRenamed("_1","Tweets_Content").withColumnRenamed("_2","Sentiment Score")
-# sentimentOfTweetPandas= sentimentOfTweetdf.toPandas()
-# sentimentOfTweetPandas.head(10)
 
